@@ -1,0 +1,56 @@
+<div class="container" href="#/review">
+  <!-- <div class="panel panel-default"> -->
+  <div>
+    <div class="row">
+      <div class="col-md-12" style="text-align: center;">
+        <img class="logo" src="Screens/Logo for Home Screen-2.png">
+        <h4>See Something? Say Something</h4>
+        <hr class="top">
+      </div>
+    </div>
+    <!-- <div class="panel-heading">
+    <p><a href="#/search">Back</a></p>
+    <h3>Finish Report</h3> -->
+    <!-- <p><a href="#/succesfullSubmit">Done</a></p> -->
+    <!-- </div> -->
+    <div>
+      <form>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group"> <!-- Date field -->
+              <label class="control-label requiredField">Rate your Officer</label>
+              <!-- <div class="input-group-addon">$</div> -->
+              <select class="form-control" ng-model="review.stars">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group"> <!-- Message field -->
+              <label class="control-label " for="message"></label>
+              <textarea class="form-control review" cols="40" rows="5" placeholder="Write Brief Report Summary..." ng-model="review.reviewContent">
+              </textarea>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group" style="margin-left: 37%;"> <!-- Message field -->
+              <img style="margin-left: 4%;" src="Screens/Photo Icon.png">
+              <h4>Upload a photo or video</h4>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="submit_review">
+      <button ng-click="gotToSumbit()" class="btn btn-info">Submit</button>
+    </div>
+  </div>
+</div>

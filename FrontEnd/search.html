@@ -1,0 +1,154 @@
+<style>
+  .cop{
+    width: 100px;
+    height: 500px;
+  }
+  .scroll{
+    height: 200px; /* or any value */
+    overflow-x: auto;
+  }
+</style>
+<div class="container" href="#/search">
+  <div class="row">
+    <div class="col-md-12" style="text-align: center;">
+      <img class="logo" src="Screens/Logo for Home Screen-2.png">
+      <h4>See Something? Say Something</h4>
+      <hr class="top">
+    </div>
+  </div>
+  <form>
+    <!-- <div class="form-group input-group">
+      <input type="text" class="form-control" placeholder="Search Officer by name or Badge IDs..">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="button">
+          <span class="glyphicon glyphicon-search"></span>
+        </button>
+      </span>
+    </div> -->
+
+    <div class="form-group"> <!-- Name field -->
+      <label for="sel1">Officer Name:</label>
+      <input class="form-control" name="name" type="text" required ng-model="review.name">
+    </div>
+
+    <div class="form-group">
+      <label for="sel1">Badge Number:</label>
+      <input class="form-control" name="badgeNumber" type="number" required ng-model="review.badgeNumber">
+    </div>
+
+    <div class="form-group"> <!-- Name field -->
+      <label for="sel1">Select Officer Rank:</label>
+      <select class="form-control" ng-model="review.position">
+        <option>Oifficer</option>
+        <option>Invesitgator</option>
+        <option>Sergeant</option>
+        <option>Lieutenant</option>
+        <option>Captain</option>
+        <option>Major</option>
+        <option>Deputy Chief</option>
+        <option>Assistant Chief</option>
+        <option>Chief of Police</option>
+      </select>
+    </div>
+
+
+    <div class="form-group"> <!-- Name field -->
+      <label for="sel1">Select Gender:</label>
+      <select class="form-control" ng-model="review.gender">
+        <option>Female</option>
+        <option>Male</option>
+        <option>Other</option>
+      </select>
+    </div>
+
+    <div class="form-group"> <!-- Name field -->
+      <label for="sel1">Ethnicity:</label>
+      <select class="form-control" ng-model="review.ethnicity">
+        <option>Caucasain</option>
+        <option>African-American</option>
+        <option>Hispanic</option>
+        <option>Asian</option>
+        <option>Other</option>
+      </select>
+    </div>
+
+    <!-- <div class="form-group">
+      <label for="sel1">Hair Color:</label>
+      <select class="form-control">
+        <option>Black</option>
+        <option>Brown</option>
+        <option>Blonde</option>
+        <option>Other</option>
+      </select>
+    </div> -->
+
+    <!-- <div class="form-group">
+      <label for="sel1">Eye Color:</label>
+      <select class="form-control" id="sel1">
+        <option>Black</option>
+        <option>Brown</option>
+        <option>Blue</option>
+        <option>Other</option>
+      </select>
+    </div> -->
+
+    <!-- <div class="form-group">
+      <label for="sel1">Height:</label>
+      <select class="form-control" id="sel1">
+        <option>less than 5</option>
+        <option>5-6</option>
+        <option>greater than 6</option>
+      </select>
+    </div> -->
+
+
+    <div class="form-group">
+      <div class="row">
+        <!-- <div class="col-md-6 text-center" > -->
+          <!-- <a href="#" class="btn btn-danger btn-circle">Send Help!</a> -->
+          <!-- <button class="btn btn-danger" name="submit" type="submit" ng-click="gotToReview()">I can't find the officer</button> -->
+        <!-- </div> -->
+        <div class="col-md-12 text-center">
+          <button class="btn btn-info submit_btn" name="submit" type="submit" ng-click="gotToReview()">Submit</button>
+          <!-- onclick="showDiv()" -->
+        </div>
+      </div>
+    </div>
+  </form>
+
+
+  <!-- <div id="ImagesDiv" class="row scroll" style="display:none;overflow: scroll;">
+
+    <div class="row">
+      <div class="col-lg-3 col-md-3 col-xs-6 thumb">
+        <a class="thumbnail" ng-click="gotToReview()">
+          <img class="img-responsive cops" src="SecondCop1.png" alt="">
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-3 col-xs-6 thumb">
+        <a class="thumbnail" ng-click="gotToReview()">
+          <img class="img-responsive cops" src="SecondCop2.png" alt="">
+        </a>
+      </div>
+
+
+      <div class="col-lg-3 col-md-3 col-xs-6 thumb">
+        <a class="thumbnail" ng-click="gotToReview()">
+          <img class="img-responsive cops" src="SecondCop3.png" alt="">
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-3 col-xs-6 thumb">
+        <a class="thumbnail" ng-click="gotToReview()">
+          <img class="img-responsive cops" src="SecondCop4.png" alt="">
+        </a>
+      </div>
+    </div>
+  </div> -->
+</div>
+
+<!-- <script>
+function showDiv() {
+  document.getElementById('ImagesDiv').style.display = "block";
+}
+
+</script> -->

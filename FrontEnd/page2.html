@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script>
+	function showDiv() {
+		document.getElementById('ImagesDiv').style.display = "block";
+	}
+	
+  </script>
+</head>
+<body>
+<body>
+<div class="container" href="#/home_test">
+  <div class="row">
+    <div class="col-md-12" style="text-align: center;">
+      <img class="logo" src="Screens/Logo for Home Screen-2.png">
+        <h4>See Something? Say Something</h4>
+        <hr class="top">
+    </div>
+  </div>
+  <form>
+    <div class="form-group input-group"> <!-- Date field -->
+			  <input type="text" class="form-control" placeholder="Search Officer by name or Badge IDs..">
+			  <span class="input-group-btn">
+				<button class="btn btn-default" type="button">
+				  <span class="glyphicon glyphicon-search"></span>
+				</button>
+			  </span>	    
+    </div>
+    <div class="form-group"> <!-- Name field -->
+      <label for="sel1">Select Gender:</label>
+		  <select class="form-control" id="sel1">
+			<option>Male</option>
+			<option>Female</option>
+			<option>Other</option>
+		  </select>
+    </div>
+	
+	<div class="form-group"> <!-- Name field -->
+		  <label for="sel1">Hair Color:</label>
+		  <select class="form-control" id="sel1">
+			<option>Black</option>
+			<option>Brown</option>
+			<option>Blonde</option>			
+			<option>Other</option>
+		  </select>
+    </div>
+	
+	<div class="form-group"> <!-- Name field -->
+		  <label for="sel1">Eye Color:</label>
+		  <select class="form-control" id="sel1">
+			<option>Black</option>
+			<option>Brown</option>
+			<option>Blue</option>			
+			<option>Other</option>
+		  </select>
+    </div>
+	
+	<div class="form-group"> <!-- Name field -->
+		  <label for="sel1">Height:</label>
+		  <select class="form-control" id="sel1">
+			<option>less than 5</option>
+			<option>5-6</option>
+			<option>greater than 6</option>	
+		  </select>
+    </div>
+	
+		<div class="form-group"> <!-- Name field -->
+		  <label for="sel1">Race:</label>
+		  <select class="form-control" id="sel1">
+			<option>Caucasain than 5</option>
+			<option>African-American</option>
+			<option>Hispanic</option>	
+			<option>Asian</option>	
+			<option>Others</option>	
+		  </select>
+    </div>
+</form>
+    <div class="form-group">
+      <div class="row">        
+        <div class="col-md-12 text-center">
+          <button class="btn btn-info submit_btn" name="submit" type="submit" onclick="showDiv()">Submit</button>
+        </div>
+      </div>
+    </div>
+	   
+  <div id="ImagesDiv" class="row" style="display:none;">      			
+
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="SecondCop1.png" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="SecondCop2.png" alt="">
+                </a>
+            </div>
+			<div class="clearfix visible-xs"></div>
+    
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="SecondCop3.png" alt="">
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                <a class="thumbnail" href="#">
+                    <img class="img-responsive" src="SecondCop4.png" alt="">
+                </a>
+            </div>
+			
+	<div class="form-group">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <!-- <a href="#" class="btn btn-danger btn-circle">Send Help!</a> -->
+          <button class="btn btn-danger btn-circle" name="submit" type="submit" onclick="NextPageDiv()">I can't find the officer</button>
+        </div>
+      </div>
+    </div>
+         
+    </div>
+ 
+</div>
+</body>
+</html>

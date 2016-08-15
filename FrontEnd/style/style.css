@@ -1,0 +1,46 @@
+.top{
+  border-top: 1px solid gray;
+  margin-top: 0%;
+}
+.bottom{
+  border-bottom: 1px solid gray;
+  margin-top: 0%;
+}
+.streetAddress2{
+  margin-top: 2%;
+}
+.locationTitle{
+  text-align: center;
+  margin-top:1%;
+  margin-bottom: -2%;
+}
+/*.submit_btn{
+  margin-left: 89%;
+}*/
+.submit_review{
+  margin-bottom: 2%;
+  margin-left: 44%;
+}
+
+.btn-circle {
+  width: 144px;
+  height: 49px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 23px;
+  line-height: 1.42;
+  border-radius: 49px;
+}
+.container {
+  height: 100%;
+  margin: 0px auto;
+  overflow: hidden;
+}
+
+body, html {
+  height: 100vh;
+}
+
+.logo{
+  margin-top: 2%;
+}
