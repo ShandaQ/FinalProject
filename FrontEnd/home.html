@@ -26,7 +26,7 @@
         </div>
         <div class="form-group"> <!-- Name field -->
           <label class="control-label" style="margin-top:2%;">Time</label>
-          <input type="time" class="form-control" type="time" placeholder="Text input" ng-model="time">
+          <input type="time" class="form-control" placeholder="Text input" ng-model="time">
         </div>
 
         <div class="form-group"> <!-- Subject field -->
@@ -38,7 +38,18 @@
           </div>
         </div>
 
-        <div class="form-group"> <!-- Message field -->
+        <div>
+          <div class="row">
+            <div class="col-md-12" id="geoLocation">
+            </div>
+            <div class="col-md-12" style="background-color: #f7f1f1; text-align:center;">
+              <button type="button" ng-click="getLocation()">Use my current location
+              <i class="fa fa-location-arrow fa-4" id="location" aria-hidden="true"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
           <label class="control-label " for="message"></label>
           <textarea class="form-control streetAddress1" cols="40" rows="1" placeholder="Enter Street Address" ng-model="review.address"></textarea>
           <textarea class="form-control streetAddress2" cols="40"  rows="1" placeholder="Enter zip code" ng-model="review.zipCode"></textarea>
@@ -46,13 +57,14 @@
 
         <div class="form-group">
           <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-12">
               <!-- <a href="#" class="btn btn-danger btn-circle">Send Help!</a> -->
-              <button class="btn btn-danger btn-circle" type="submit">Send Help!</button>
-            </div>
-            <div class="col-md-9">
+              <button class="btn btn-danger btn-circle" type="submit"><a href="tel:+12672415161">Send Help!</a></button>
               <button class="btn btn-info submit_btn" name="submit" type="submit" ng-click="gotToSearch()">Submit</button>
             </div>
+            <!-- <div class="col-md-6">
+              <button class="btn btn-info submit_btn" name="submit" type="submit" ng-click="gotToSearch()">Submit</button>
+            </div> -->
           </div>
         </div>
       </form>

@@ -31,12 +31,27 @@
   line-height: 1.42;
   border-radius: 49px;
 }
-.container {
-  height: 100%;
-  margin: 0px auto;
-  overflow: hidden;
+
+.btn-circle a{
+  text-decoration: none;
+  color: white;
 }
 
+.submit_btn{
+  margin-left: 35%;
+}
+
+.search_submit_btn{
+  margin-left: -2%;
+}
+
+.photo{
+  margin-left: 29%;
+}
+
+.uploadPhotoText{
+  text-align: center;
+}
 body, html {
   height: 100vh;
 }

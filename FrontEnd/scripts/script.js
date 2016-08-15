@@ -43,12 +43,38 @@ app.controller('MainController', function($scope, $location, $rootScope){
     reviewRating: ""
   };
 
+  $scope.getLocation = function() {
+    var output = document.getElementById('geoLocation');
+    output.innerHTML = "<p>Locating…</p>";
+
+    if ("geolocation" in navigator) {
+      /* geolocation is available */
+      navigator.geolocation.getCurrentPosition(function(position) {
+        document.getElementById("location").style.color = "blue";
+
+        $rootScope.review.lat = position.coords.latitude;
+        $rootScope.review.lng = position.coords.longitude;
+
+
+        console.log($rootScope.review.lat, $rootScope.review.lng);
+        output.innerHTML = "";
+        // do_something(position.coords.latitude, position.coords.longitude);
+      },function error(){
+        alert("Sorry, no position available, please enter your location");
+      });
+    } else {
+      /* geolocation IS NOT available */
+      console.log("Unable to retrieve your location");
+      alert("Sorry your browser does not support geolocation, please enter your location");
+    }
+  };
+
   $scope.gotToSearch = function(){
 
     // $rootScope.date = $scope.date;
     // $rootScope.time = $scope.time;
     // $rootScope.address = $scope.address;
-    // $rootScope.zipCode = $scope.zipCode;
+    console.log($rootScope.review.lat, $rootScope.review.lng);
 
     $rootScope.review.timeDate = new Date($scope.date.getFullYear(), $scope.date.getMonth(), $scope.date.getDate(), $scope.time.getHours(), $scope.time.getMinutes(), $scope.time.getSeconds());
 
