@@ -7,10 +7,10 @@ angular.module('app.routes', [])
   // Set up the various states which the app can be in.
   // Each state's controller can be found in controllers.js
   $stateProvider
-    
-  
 
-      .state('home', {
+
+
+  .state('home', {
     url: '/home',
     templateUrl: 'templates/home.html',
     controller: 'homeCtrl'
@@ -26,10 +26,10 @@ angular.module('app.routes', [])
     url: '/review',
     templateUrl: 'templates/review.html',
     controller: 'reviewCtrl'
-  })
+  });
 
-$urlRouterProvider.otherwise('/home')
+$urlRouterProvider.otherwise('/home');
 
-  
+
 
 });
