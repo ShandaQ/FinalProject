@@ -13,19 +13,22 @@ angular.module('app.routes', [])
   .state('home', {
     url: '/home',
     templateUrl: 'templates/home.html',
-    controller: 'homeCtrl'
+    controller: 'homeCtrl',
+    cache: false
   })
 
   .state('officerInfo', {
     url: '/officerInfo',
     templateUrl: 'templates/officerInfo.html',
-    controller: 'officerInfoCtrl'
+    controller: 'officerInfoCtrl',
+    cache: false
   })
 
   .state('review', {
     url: '/review',
     templateUrl: 'templates/review.html',
-    controller: 'reviewCtrl'
+    controller: 'reviewCtrl',
+    cache: false
   });
 
 $urlRouterProvider.otherwise('/home');

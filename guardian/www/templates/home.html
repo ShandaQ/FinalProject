@@ -9,13 +9,13 @@
         </ion-list>
         <div class="spacer" style="width: 300px; height: 17px;"></div>
         <form id="home-form5" class="list ">
-            <label class="item item-input " id="home-input2">
-                <span class="input-label">Time</span>
-                <input type="time" placeholder="">
-            </label>
             <label class="item item-input " id="home-input1">
                 <span class="input-label">Date</span>
-                <input type="date" placeholder="">
+                <input type="date" placeholder="" ng-model="timedate.date">
+            </label>
+            <label class="item item-input " id="home-input2">
+                <span class="input-label">Time</span>
+                <input type="time" placeholder="" ng-model="timedate.time">
             </label>
         </form>
         <div class="spacer" style="width: 300px; height: 17px;"></div>
@@ -24,21 +24,22 @@
         </p>
         <div class="spacer" style="width: 300px; height: 17px;"></div>
         <form id="home-form1" class="list ">
-            <ion-item class="item-icon-right  " id="home-list-item2">Use my current location
-                <i class="icon ion-ios-location"></i>
+          <span id="geoLocation"></span>
+            <ion-item  ng-click="getLocation()" class="item-icon-right  " id="home-list-item2">Use my current location
+                <i class="icon ion-ios-location" id="location"></i>
             </ion-item>
             <label class="item item-input " id="home-input4">
                 <span class="input-label">Address</span>
-                <input type="text" placeholder="">
+                <input type="text" placeholder="" ng-model="review.address">
             </label>
             <label class="item item-input " id="home-input3">
-                <span class="input-label">Enter Address</span>
-                <input type="text" placeholder="">
+                <span class="input-label">ZipCode</span>
+                <input type="number" placeholder="" ng-model="review.zipCode">
             </label>
             <div class="spacer" style="width: 300px; height: 60px;"></div>
             <div id="home-button-bar2" class=" button-bar ">
-                <a href="tel:911" id="home-button4" style="font-weight:600;font-size:18px;border-radius:29px 29px 29px 29px;" class=" button button-assertive  button-block helpBtn">SEND HELP!</a>
-                <a ui-sref="officerInfo" id="home-button6" style="border-radius:29px 29px 29px 29px;" class=" button button-calm  button-block homeSubmitBtn">SUBMIT</a>
+                <a href="tel:+12672415161" id="home-button4" style="font-weight:600;font-size:18px;border-radius:29px 29px 29px 29px;" class=" button button-assertive  button-block helpBtn">SEND HELP!</a>
+                <a ui-sref="officerInfo" id="home-button6" style="font-weight:450;font-size:18px;border-radius:29px 29px 29px 29px;" class=" button button-calm  button-block homeSubmitBtn" ng-click="gotToSearch()">NEXT</a>
             </div>
         </form>
         <div id="home-button-bar1" class=" button-bar "></div>

@@ -11,7 +11,7 @@
         <form id="review-form4" class="list ">
             <label class="item item-select " id="review-select3">
                 <span class="input-label">Rate your Officer</span>
-                <select>
+                <select ng-model="review.stars">
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
@@ -25,11 +25,11 @@
               <!-- <input type="text" placeholder="Write  Brief Report Summary"> -->
               <!-- <ion-item> -->
                <!-- <ion-label>Comments</ion-label> -->
-               <textarea placeholder="Write  Brief Report Summary" style="width:100%;" rows="15"></textarea>
+               <textarea placeholder="Write  Brief Report Summary" style="width:100%;" rows="15" ng-model="review.reviewContent"></textarea>
              <!-- </ion-item> -->
             </label>
         </form>
         <div class="spacer" style="width: 300px; height: 25px;"></div>
-        <a ui-sref="home" id="review-button8" style="border-radius:29px 29px 29px 29px;" class=" button button-calm  button-block ">Submit</a>
+        <a ui-sref="home" id="review-button8" style="font-weight:450;font-size:18px;border-radius:29px 29px 29px 29px;" class=" button button-calm  button-block " ng-click="goToSubmit()">SUBMIT REVIEW</a>
     </ion-content>
 </ion-view>

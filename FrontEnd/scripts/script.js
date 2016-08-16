@@ -97,28 +97,7 @@ app.controller('searchController', function($scope,$location, $rootScope){
 });
 app.controller('reviewController', function($scope, $location, $rootScope, $http){
   $scope.gotToSumbit = function(){
-    // console.log($rootScope.date, $rootScope.time, $rootScope.officerName, $rootScope.badgeNumber, $rootScope.position,$rootScope.gender,$rootScope.ethnicity);
 
-    // $rootScope.rating = $scope.rating;
-    // $rootScope.reviewContent = $scope.reviewSummary;
-
-    // console.log($rootScope.timeDate, $rootScope.time, $rootScope.address,$rootScope.zipCode,$rootScope.name, $rootScope.badgeNumber, $rootScope.position,$rootScope.gender,$rootScope.ethnicity,$rootScope.rating,$rootScope.reviewContent);
-
-
-
-
-
-
-    // reviewData.timeDate = $rootScope.timestamp;
-    // reviewData.address = $rootScope.address;
-    // reviewData.zipCode = $rootScope.zipCode;
-    // reviewData.name = $rootScope.officerName;
-    // reviewData.badgeNumber = $rootScope.badgeNumber;
-    // reviewData.position = $rootScope.position;
-    // reviewData.gender = $rootScope.gender;
-    // reviewData.ethnicity = $rootScope.ethnicity;
-    // reviewData.stars = $rootScope.rating;
-    // reviewData.reviewContent = $rootScope.reviewContent;
 
     console.log($rootScope.review);
 

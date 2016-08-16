@@ -9,15 +9,15 @@
             <div class="spacer" style="width: 300px; height: 23px;"></div>
             <label class="item item-input " id="officerInfo-input8">
                 <span class="input-label">Officer Name:</span>
-                <input type="text" placeholder="">
+                <input type="text" placeholder="" ng-model="review.name">
             </label>
             <label class="item item-input " id="officerInfo-input6">
                 <span class="input-label">Badge #:</span>
-                <input type="number" placeholder="">
+                <input type="number" placeholder="" ng-model="review.badgeNumber">
             </label>
             <label class="item item-select " id="officerInfo-select2">
                 <span class="input-label">Select Officer Rank</span>
-                <select>
+                <select ng-model="review.position">
                     <option>Officer</option>
                     <option>Investigator</option>
                     <option>Sergeant</option>
@@ -31,14 +31,14 @@
             </label>
             <label class="item item-select " id="officerInfo-select4">
                 <span class="input-label">Gender</span>
-                <select>
+                <select ng-model="review.gender">
                     <option>Female</option>
                     <option>Male</option>
                 </select>
             </label>
             <label class="item item-select " id="officerInfo-select1">
                 <span class="input-label">Ethnicity</span>
-                <select>
+                <select ng-model="review.ethnicity">
                     <option>African American</option>
                     <option>Asian American</option>
                     <option>Hispanic or Latino</option>
@@ -49,6 +49,6 @@
             </label>
         </form>
         <div class="spacer" style="width: 300px; height: 60px;"></div>
-        <a ui-sref="review" id="officerInfo-button7" style="border-radius:29px 29px 29px 29px;" class=" button button-calm  button-block ">SUBMIT</a>
+        <a ui-sref="review" id="officerInfo-button7" style="font-weight:450;font-size:18px;border-radius:29px 29px 29px 29px;" class=" button button-calm  button-block " ng-click="gotToReview()">NEXT</a>
     </ion-content>
 </ion-view>
