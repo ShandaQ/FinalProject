@@ -56,7 +56,7 @@ app.post('/postreview', function(req, res){
   var newReview = req.body;
 
   console.log(newReview);
-  //sets the reviewRating between -1 and +1 
+  //sets the reviewRating between -1 and +1
   score = sentimentAnalysis(newReview.reviewContent);
   console.log("score: ", score);
   newReview.reviewRating = score;
@@ -74,7 +74,7 @@ app.post('/postreview', function(req, res){
       return;
     })
     .catch(function(err){
-      console.error(err.errors);
+      console.error(err.message);
       res.send({
         status: 'fail',
         message: err.errors
