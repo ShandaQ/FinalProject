@@ -14,20 +14,21 @@
     Taking the web application a step further by converting it over to an phone app using the ionic framework and adding 
     a backend using MongoDB, NodeJS.
     
-    ## Technologies Used to create this application
+   <h1>Technologies Used to create this application</h1>
     FrontEnd: Ionic Framework, JavaScript, AngularJS, CSS, HTML, API to my DB
     BackEnd: NodeJS, Express, Sentiment-Analysis, Mongoose, MongoDB
 
-    # Future Enhancements
-    
-    Allow the user of the app to upoad a picture or video and save it to Mongodb using fsgrid.
+   <h1>Future Enhancements/<h1>
+    <ul>
+      <li>Allow the user of the app to upoad a picture or video and save it to Mongodb using fsgrid.</li>
 
-    On the userside I would like to add a map that talks to a crime api to show and inform the uses of what's going on 
-    in their community. Awareness is key and information is knowledge.
+      <li>On the userside I would like to add a map that talks to a crime api to show and inform the uses of what's going on 
+    in their community. Awareness is key and information is knowledge.</li>
 
-    Complete the "Boss" side code. The "Boss" code is a glimpse into what the "higher ups" can view when reviewing 
+      <li>Complete the "Boss" side code. The "Boss" code is a glimpse into what the "higher ups" can view when reviewing 
     officers within their precinct.
-      - I have tried to find an API of Police Officers but have come up short, if anyone can help I would be very thankful. 
+      - I have tried to find an API of Police Officers but have come up short, if anyone can help I would be very thankful.</li>
+       
   
   # Ionic Screen Shots
    <img src="img/homePage.PNG">
