@@ -15,6 +15,8 @@
     a backend using MongoDB, NodeJS.
 
     # Future Enhancements
+    
+    Allow the user of the app to upoad a picture or video and save it to Mongodb using fsgrid.
 
     On the userside I would like to add a map that talks to a crime api to show and inform the uses of what's going on 
     in their community. Awareness is key and information is knowledge.
