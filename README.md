@@ -14,11 +14,11 @@
     Taking the web application a step further by converting it over to an phone app using the ionic framework and adding 
     a backend using MongoDB, NodeJS.
     
-   <h1>Technologies Used to create this application</h1>
+   Technologies Used to create this application
     FrontEnd: Ionic Framework, JavaScript, AngularJS, CSS, HTML, API to my DB
     BackEnd: NodeJS, Express, Sentiment-Analysis, Mongoose, MongoDB
 
-   <h1>Future Enhancements</h1>
+   Future Enhancements
     Allow the user of the app to upoad a picture or video and save it to Mongodb using fsgrid.
 
     On the userside I would like to add a map that talks to a crime api to show and inform the uses of what's going on 
