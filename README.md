@@ -13,6 +13,10 @@
 
     Taking the web application a step further by converting it over to an phone app using the ionic framework and adding 
     a backend using MongoDB, NodeJS.
+    
+    ## Technologies Used to create this application
+    FrontEnd: Ionic Framework, JavaScript, AngularJS, CSS, HTML, API to my DB
+    BackEnd: NodeJS, Express, Sentiment-Analysis, Mongoose, MongoDB
 
     # Future Enhancements
     
