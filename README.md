@@ -23,7 +23,12 @@
     officers within their precinct.
       - I have tried to find an API of Police Officers but have come up short, if anyone can help I would be very thankful. 
 
-
+  
+  
+  <h1><img src="img/homePage.png"></img>Home Page </h1>
+  <h1><img src="img/officerInfo.png"></img>Enter officer Info Page </h1>
+  <h1><img src="img/review.png"></img>Review Page </h1>
+  
 
     Team: Public Defenders :
     Ayanna Kosoko, Elle Chun, Jassimran Somal, Lynsey Ham, Nikaylah Woody, Ronique Young and Shanda Kennedy created this app as part of Women Who Code Hackathon Atlanta
