@@ -79,6 +79,7 @@ app.post('/postreview', function(req, res){
         status: 'fail',
         message: err.errors
       });
+      console.log(err.errors);
       return;
     });
 });
