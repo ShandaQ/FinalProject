@@ -25,9 +25,9 @@
 
   
   
-  <h1><img src="img/homePage.png"></img>Home Page </h1>
-  <h1><img src="img/officerInfo.png"></img>Enter officer Info Page </h1>
-  <h1><img src="img/review.png"></img>Review Page </h1>
+  <h1><img src="img/homePage.PNG"></img>Home Page </h1>
+  <h1><img src="img/officerInfo.PNG"></img>Enter officer Info Page </h1>
+  <h1><img src="img/review.PNG"></img>Review Page </h1>
   
 
     Team: Public Defenders :
