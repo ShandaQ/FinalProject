@@ -19,14 +19,14 @@
     BackEnd: NodeJS, Express, Sentiment-Analysis, Mongoose, MongoDB
 
    <h1>Future Enhancements</h1>
-      - Allow the user of the app to upoad a picture or video and save it to Mongodb using fsgrid.
+    Allow the user of the app to upoad a picture or video and save it to Mongodb using fsgrid.
 
-      -On the userside I would like to add a map that talks to a crime api to show and inform the uses of what's going on 
+    On the userside I would like to add a map that talks to a crime api to show and inform the uses of what's going on 
     in their community. Awareness is key and information is knowledge.
 
-    -Complete the "Boss" side code. The "Boss" code is a glimpse into what the "higher ups" can view when reviewing 
+    Complete the "Boss" side code. The "Boss" code is a glimpse into what the "higher ups" can view when reviewing 
     officers within their precinct.
-      - I have tried to find an API of Police Officers but have come up short, if anyone can help I would be very thankful.
+      I have tried to find an API of Police Officers but have come up short, if anyone can help I would be very thankful.
        
   
   # Ionic Screen Shots
